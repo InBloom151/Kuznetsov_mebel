@@ -1,0 +1,3 @@
+*.pyc
+/showcase/migrations
+db.sqlite3

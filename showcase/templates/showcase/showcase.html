@@ -1,0 +1,289 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!---------------------------------------TITLE--------------------------------------------------------------->
+
+<div class="title__container main-title">
+  <div class="main-title__wrapper">
+    <div class="main-title__slider title-slider">
+      <img id="slide_1" src="{% static 'images/slide_1.png' %}" alt="slide_1" class="title-slider__image">
+      <img id="slide_2" src="{% static 'images/slide_2.png' %}" alt="slide_2" class="title-slider__image">
+      <img id="slide_3" src="{% static 'images/slide_3.png' %}" alt="slide_3" class="title-slider__image">
+      <div class="title-slider__buttons">
+        <div id="slide_button_1" class="title-slider__button"></div>
+        <div id="slide_button_2" class="title-slider__button"></div>
+        <div id="slide_button_3" class="title-slider__button _pressed"></div>
+      </div>
+    </div>
+    <div class="main-title__banner title-banner">
+      <div class="title-banner__border"></div>
+      <div class="title-banner__content title-content">
+        <h2 class="title-content__header"><span>Корпусная</span> мебель</h2>
+        <p class="title-content__text">Изготовление корпусной мебели на заказ <br>в г. Краснодаре</p>
+      </div>
+    </div>
+    <button class="main-title__button">Рассчитать стоимость</button>
+  </div>
+</div>
+
+<!---------------------------------------ABOUT--------------------------------------------------------------->
+
+<div class="about__container">
+  <div class="about__title title-block">
+    <h2 class="title-block__title">О нас</h2>
+    <div class="title-block__underscore"></div>
+  </div>
+  <div class="about__wrapper about-wrapper">
+    <img src="{% static 'images/living_room.jpg' %}" alt="about_image" class="about-wrapper__image">
+    <div class="about-wrapper__blocks about-blocks">
+      <div class="about-blocks__block">
+        <h2 class="about-blocks__title">Качественное производство</h2>
+        <p class="about-blocks__text">Работа ведется напрямую со складами производителя, что сводит к минимуму расходы, обеспечивая скорость выполнения работы</p>
+      </div>
+      <div class="about-blocks__block about-blocks__block-diff-color">
+        <h2 class="about-blocks__title">Опытные специалисты</h2>
+        <p class="about-blocks__text">В нашем штате  работают квалифицированные сотрудники, что гарантирует правильную организацию рабочего процесса </p>
+      </div>
+      <div class="about-blocks__block">
+        <h2 class="about-blocks__title">Широкий ассортимент</h2>
+        <p class="about-blocks__text">В ассортименте широкий выбор материалов, декора и фурнитуры, благодаря этому ваш дизайн станет индивидуальным</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---------------------------------------GALERY--------------------------------------------------------------->
+<div class="galery__container">
+  <div class="about__title title-block">
+    <h2 class="title-block__title">Галерея</h2>
+    <div class="title-block__underscore"></div>
+  </div>
+  <div class="galery__buttons-wrapper">
+    <div class="galery__buttons buttons">
+      <h2 id="lineBarButton_1" class="buttons__button button_pressed">Кухни</h2>
+      <h2 id="lineBarButton_2" class="buttons__button">Шкафы</h2>
+      <h2 id="lineBarButton_3" class="buttons__button">Тумбы</h2>
+    </div>
+    <div class="galery__linebar linebar">
+      <div class="linebar__back"></div>
+      <div class="linebar__front"></div>
+    </div>
+  </div>
+  <div class="galery__outer-wrapper">
+    <div class="galery__wrapper galery__wrapper--kitchen">
+      <div class="galery__item">
+        <img src="{% static 'images/galery_1.jpg' %}" alt="" class="galery__image">
+        <div class="galery__banner">
+          <h2 class="galery__describe galery__describe--left">Кухня</h2>
+          <h2 class="galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="galery__item">
+        <img src="{% static 'images/galery_2.jpg' %}" alt="" class="galery__image">
+        <div class="galery__banner">
+          <h2 class="galery__describe galery__describe--left">Кухня</h2>
+          <h2 class="galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="galery__item galery__big-screen">
+        <img src="{% static 'images/galery_3.jpg' %}" alt="" class="galery__image">
+        <div class="galery__banner">
+          <h2 class="galery__describe galery__describe--left">Кухня</h2>
+          <h2 class="galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="galery__item">
+        <img src="{% static 'images/galery_4.jpg' %}" alt="" class="galery__image">
+        <div class="galery__banner">
+          <h2 class="galery__describe galery__describe--left">Кухня</h2>
+          <h2 class="galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="galery__item">
+        <img src="{% static 'images/galery_5.jpg' %}" alt="" class="galery__image">
+        <div class="galery__banner">
+          <h2 class="galery__describe galery__describe--left">Кухня</h2>
+          <h2 class="galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="galery__item galery__big-screen">
+        <img src="{% static 'images/galery_6.jpg' %}" alt="" class="galery__image">
+        <div class="galery__banner">
+          <h2 class="galery__describe galery__describe--left">Кухня</h2>
+          <h2 class="galery__describe">100 000 р</h2>
+        </div>
+      </div>
+    </div>
+    <div class="galery__wrapper galery__wrapper--woodrobe hide">
+      <div class="galery__item">
+        <img src="{% static 'images/galery_6.jpg' %}" alt="" class="galery__image">
+        <div class="galery__banner">
+          <h2 class="galery__describe galery__describe--left">Шкаф</h2>
+          <h2 class="galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="galery__item">
+        <img src="{% static 'images/galery_5.jpg' %}" alt="" class="galery__image">
+        <div class="galery__banner">
+          <h2 class="galery__describe galery__describe--left">Шкаф</h2>
+          <h2 class="galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="galery__item galery__big-screen">
+        <img src="{% static 'images/galery_4.jpg' %}" alt="" class="galery__image">
+        <div class="galery__banner">
+          <h2 class="galery__describe galery__describe--left">Шкаф</h2>
+          <h2 class="galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="galery__item">
+        <img src="{% static 'images/galery_3.jpg' %}" alt="" class="galery__image">
+        <div class="galery__banner">
+          <h2 class="galery__describe galery__describe--left">Шкаф</h2>
+          <h2 class="galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="galery__item">
+        <img src="{% static 'images/galery_2.jpg' %}" alt="" class="galery__image">
+        <div class="galery__banner">
+          <h2 class="galery__describe galery__describe--left">Шкаф</h2>
+          <h2 class="galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="galery__item galery__big-screen">
+        <img src="{% static 'images/galery_1.jpg' %}" alt="" class="galery__image">
+        <div class="galery__banner">
+          <h2 class="galery__describe galery__describe--left">Шкаф</h2>
+          <h2 class="galery__describe">100 000 р</h2>
+        </div>
+      </div>
+    </div>
+    <div class="galery__wrapper galery__wrapper--cabinet hide">
+      <div class="galery__item">
+        <img src="{% static 'images/galery_5.jpg' %}" alt="" class="galery__image">
+        <div class="galery__banner">
+          <h2 class="galery__describe galery__describe--left">Тумба</h2>
+          <h2 class="galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="galery__item">
+        <img src="{% static 'images/galery_4.jpg' %}" alt="" class="galery__image">
+        <div class="galery__banner">
+          <h2 class="galery__describe galery__describe--left">Тумба</h2>
+          <h2 class="galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="galery__item galery__big-screen">
+        <img src="{% static 'images/galery_6.jpg' %}" alt="" class="galery__image">
+        <div class="galery__banner">
+          <h2 class="galery__describe galery__describe--left">Тумба</h2>
+          <h2 class="galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="galery__item">
+        <img src="{% static 'images/galery_1.jpg' %}" alt="" class="galery__image">
+        <div class="galery__banner">
+          <h2 class="galery__describe galery__describe--left">Тумба</h2>
+          <h2 class="galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="galery__item">
+        <img src="{% static 'images/galery_3.jpg' %}" alt="" class="galery__image">
+        <div class="galery__banner">
+          <h2 class="galery__describe galery__describe--left">Тумба</h2>
+          <h2 class="galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="galery__item galery__big-screen">
+        <img src="{% static 'images/galery_2.jpg' %}" alt="" class="galery__image">
+        <div class="galery__banner">
+          <h2 class="galery__describe galery__describe--left">Тумба</h2>
+          <h2 class="galery__describe">100 000 р</h2>
+        </div>
+      </div>
+    </div>
+    <a href="{% url 'galery' %}"><button class="galery__button">Вся галерея</button></a>
+  </div>
+</div>
+
+<!---------------------------------------REVIEWS--------------------------------------------------------------->
+
+<div class="reviews__container">
+  <div class="about__title title-block">
+    <h2 class="title-block__title">Отзывы</h2>
+    <div class="title-block__underscore"></div>
+  </div>
+  <div class="reviews__slider--wrapper">
+    <div class="reviews__slider">
+      <div class="reviews__slider--item">
+        <div class="reviews__slider--inner-block">
+          <img src="{% static 'images/slide_1.png' %}" alt="" class="reviews__image">
+        </div>
+      </div>
+      <div class="reviews__slider--item">
+        <div class="reviews__slider--inner-block">
+          <img src="{% static 'images/slide_2.png' %}" alt="" class="reviews__image">
+        </div>
+      </div>
+      <div class="reviews__slider--item">
+        <div class="reviews__slider--inner-block">
+          <img src="{% static 'images/slide_3.png' %}" alt="" class="reviews__image">
+        </div>
+      </div>
+      <div class="reviews__slider--item">
+        <div class="reviews__slider--inner-block">
+          <img src="{% static 'images/galery_1.jpg' %}" alt="" class="reviews__image">
+        </div>
+      </div>
+      <div class="reviews__slider--item">
+        <div class="reviews__slider--inner-block">
+          <img src="{% static 'images/galery_2.jpg' %}" alt="" class="reviews__image">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="reviews__button button--left">
+    <img class="reviews__icon" src="{% static 'images/arrow_left.svg' %}" alt="">
+  </div>
+  <div class="reviews__button button--right">
+    <img class="reviews__icon" src="{% static 'images/arrow_right.svg' %}" alt="">
+  </div>
+</div>
+
+<!---------------------------------------CONTACTS--------------------------------------------------------------->
+
+<div class="contacts__container">
+  <div class="about__title title-block">
+    <h2 class="title-block__title">Контакты</h2>
+    <div class="title-block__underscore"></div>
+  </div>
+  <div class="contacts__wrapper">
+    <div class="contacts__map">
+      <iframe class="contacts__map--interactive" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aca7d20097a7b3eebd6e614cdfee96067e9e77a76d977c0b0de2b1c369dab721b&amp;source=constructor" frameborder="0"></iframe>
+      <img class="contacts__map--static" src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3Aefd779ed425cbf3552aac9fefcced3dd249664ea2abc64f1be0696da0c14e13e&amp;lang=ru_RU" alt=""/>
+    </div>
+    <div class="contacts__front-block">
+      <div class="contacts__border"></div>
+      <div class="contacts__content">
+        <img src="{% static 'images/logo.png' %}" alt="" class="contacts__logo">
+        <div class="contacts__text-wrapper">
+          <div class="contacts__info-wrapper">
+            <img class="contacts__icon" src="{% static 'images/phone-icon.svg' %}"></img>
+            <h2 class="contacts__info">8-918-64-47-927</h2>
+          </div>
+          <div class="contacts__info-wrapper">
+            <img class="contacts__icon" src="{% static 'images/point-icon.svg' %}"></img>
+            <h2 class="contacts__info">Краснодар, ул. Харьковская 81/1</h2>
+          </div>
+          <div class="contacts__info-wrapper">
+            <img class="contacts__icon" src="{% static 'images/clock-icon.svg' %}"></img>
+            <h2 class="contacts__info">График работы  9:00 - 19:00</h2>
+          </div>
+        </div>
+      </div>
+      <button class="contacts__button">Рассчитать стоимость</button>
+    </div>
+  </div>
+</div>
+{% endblock content %}

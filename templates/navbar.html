@@ -1,0 +1,22 @@
+{% load static %}
+<header class="header">
+  <div class="header__top top-header">
+    <div class="top-header__container">
+      <img src="{% static 'images/logo.png' %}" alt="" class="top-header__logo">
+      <nav class="top-header__menu menu-top-header">
+        <ul class="menu-top-header__list">
+          <li class="menu-top-header__item menu-top-header__active"><a href="" class="menu-top-header__link">О нас</a></li>
+          <li class="menu-top-header__item menu-top-header__active"><a href="" class="menu-top-header__link">Галерея</a></li>
+          <li class="menu-top-header__item menu-top-header__active"><a href="" class="menu-top-header__link">Отзывы</a></li>
+          <li class="menu-top-header__item menu-top-header__active"><a href="" class="menu-top-header__link">Контакты</a></li>
+        </ul>
+      </nav>
+      <h2 class="top-header__phone">8-918-64-47-927</h2>
+      <img class="top-header__icon" src="{% static 'images/phone-icon.svg' %}" alt="">
+      <nav hidden class="menu">
+        <button class="menu__icon icon-menu"><span></span></button>
+        <div class="menu__body"></div>
+      </nav>
+    </div>
+  </div>
+</header>

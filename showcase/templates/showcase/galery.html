@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="galery__container">
+  <div class="about__title title-block">
+    <h2 class="title-block__title">Галерея</h2>
+    <div class="title-block__underscore"></div>
+  </div>
+  <div class="galery__buttons-wrapper">
+    <div class="galery__buttons buttons">
+      <h2 id="lineBarButton_1" class="buttons__button button_pressed">Кухни</h2>
+      <h2 id="lineBarButton_2" class="buttons__button">Шкафы</h2>
+      <h2 id="lineBarButton_3" class="buttons__button">Тумбы</h2>
+    </div>
+    <div class="galery__linebar linebar">
+      <div class="linebar__back"></div>
+      <div class="linebar__front"></div>
+    </div>
+  </div>
+
+  <div class="main-galery__outer-wrapper">
+    <div class="main-galery__wrapper  galery__wrapper--kitchen">
+      <div class="main-galery__item">
+        <img src="{% static 'images/galery_1.jpg' %}" alt="" class="main-galery__image">
+        <div class="main-galery__banner">
+          <h2 class="main-galery__describe main-galery__describe--left">Кухня</h2>
+          <h2 class="main-galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="main-galery__item">
+        <img src="{% static 'images/galery_1.jpg' %}" alt="" class="main-galery__image">
+        <div class="main-galery__banner">
+          <h2 class="main-galery__describe main-galery__describe--left">Кухня</h2>
+          <h2 class="main-galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="main-galery__item">
+        <img src="{% static 'images/galery_1.jpg' %}" alt="" class="main-galery__image">
+        <div class="main-galery__banner">
+          <h2 class="main-galery__describe main-galery__describe--left">Кухня</h2>
+          <h2 class="main-galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="main-galery__item">
+        <img src="{% static 'images/galery_1.jpg' %}" alt="" class="main-galery__image">
+        <div class="main-galery__banner">
+          <h2 class="main-galery__describe main-galery__describe--left">Кухня</h2>
+          <h2 class="main-galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="main-galery__item">
+        <img src="{% static 'images/galery_1.jpg' %}" alt="" class="main-galery__image">
+        <div class="main-galery__banner">
+          <h2 class="main-galery__describe main-galery__describe--left">Кухня</h2>
+          <h2 class="main-galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="main-galery__item">
+        <img src="{% static 'images/galery_1.jpg' %}" alt="" class="main-galery__image">
+        <div class="main-galery__banner">
+          <h2 class="main-galery__describe main-galery__describe--left">Кухня</h2>
+          <h2 class="main-galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="main-galery__item">
+        <img src="{% static 'images/galery_1.jpg' %}" alt="" class="main-galery__image">
+        <div class="main-galery__banner">
+          <h2 class="main-galery__describe main-galery__describe--left">Кухня</h2>
+          <h2 class="main-galery__describe">100 000 р</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-galery__wrapper  galery__wrapper--woodrobe hide">
+      <div class="main-galery__item">
+        <img src="{% static 'images/galery_1.jpg' %}" alt="" class="main-galery__image">
+        <div class="main-galery__banner">
+          <h2 class="main-galery__describe main-galery__describe--left">Кухня</h2>
+          <h2 class="main-galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="main-galery__item">
+        <img src="{% static 'images/galery_1.jpg' %}" alt="" class="main-galery__image">
+        <div class="main-galery__banner">
+          <h2 class="main-galery__describe main-galery__describe--left">Кухня</h2>
+          <h2 class="main-galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="main-galery__item">
+        <img src="{% static 'images/galery_1.jpg' %}" alt="" class="main-galery__image">
+        <div class="main-galery__banner">
+          <h2 class="main-galery__describe main-galery__describe--left">Кухня</h2>
+          <h2 class="main-galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="main-galery__item">
+        <img src="{% static 'images/galery_1.jpg' %}" alt="" class="main-galery__image">
+        <div class="main-galery__banner">
+          <h2 class="main-galery__describe main-galery__describe--left">Кухня</h2>
+          <h2 class="main-galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="main-galery__item">
+        <img src="{% static 'images/galery_1.jpg' %}" alt="" class="main-galery__image">
+        <div class="main-galery__banner">
+          <h2 class="main-galery__describe main-galery__describe--left">Кухня</h2>
+          <h2 class="main-galery__describe">100 000 р</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-galery__wrapper  galery__wrapper--cabinet hide">
+      <div class="main-galery__item">
+        <img src="{% static 'images/galery_1.jpg' %}" alt="" class="main-galery__image">
+        <div class="main-galery__banner">
+          <h2 class="main-galery__describe main-galery__describe--left">Кухня</h2>
+          <h2 class="main-galery__describe">100 000 р</h2>
+        </div>
+      </div>
+      <div class="main-galery__item">
+        <img src="{% static 'images/galery_1.jpg' %}" alt="" class="main-galery__image">
+        <div class="main-galery__banner">
+          <h2 class="main-galery__describe main-galery__describe--left">Кухня</h2>
+          <h2 class="main-galery__describe">100 000 р</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

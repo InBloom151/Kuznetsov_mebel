@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="item__contaier">
+  <div class="item__wrapper">
+    <div class="item__slider">
+      <div class="item__slider--wrapper">
+        <img src="{% static 'images/galery_1.jpg' %}" alt="" class="item__slider--item">
+        <img src="{% static 'images/galery_2.jpg' %}" alt="" class="item__slider--item">
+        <img src="{% static 'images/galery_3.jpg' %}" alt="" class="item__slider--item">
+      </div>
+    </div>
+    <div class="item__content content">
+      <div class="content__title">
+        <h2>Кухня</h2>
+        <div class="content__text--above">
+          <h2>100 000 р</h2>
+          <h6>с доставкой и установкой</h6>
+        </div>
+      </div>
+      <div class="content__features">
+        <h2>Характеристики</h2>
+      </div>
+      <div class="content__feature">
+        <h2>Размеры</h2>
+      </div>
+      <div class="content__description">
+        <h2>Ширина (см)</h2>
+        <h2>350</h2>
+      </div>
+      <div class="content__description no-underscore">
+        <h2>Длина (см)</h2>
+        <h2>200</h2>
+      </div>
+      <div class="content__feature">
+        <h2>Материалы</h2>
+      </div>
+      <div class="content__description">
+        <h2>Материал фасада</h2>
+        <h2>ЛДСП egger</h2>
+      </div>
+      <div class="content__description">
+        <h2>Материал корпуса</h2>
+        <h2>ЛДСП кроншпан</h2>
+      </div>
+      <div class="content__description">
+        <h2>Материал столешницы</h2>
+        <h2>ЛДСП АМК Троя</h2>
+      </div>
+      <div class="content__description no-underscore">
+        <h2>Фурнитура</h2>
+        <h2>Наименование</h2>
+      </div>  
+      <div class="content__feature">
+        <h2>Особенности</h2>
+      </div>
+      <div class="content__description content__description--big no-underscore">
+        <h2>Была необходимость спрятать газовые трубы, счетчик и бойлер.</h2>
+      </div>
+    </div>
+  </div>
+  <div class="item__button item__button--left">
+    <img class="item__icon" src="{% static 'images/arrow_left.svg' %}" alt="">
+  </div>
+  <div class="item__button item__button--right">
+    <img class="item__icon" src="{% static 'images/arrow_right.svg' %}" alt="">
+  </div>
+</div>
+{% endblock content %}

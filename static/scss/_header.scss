@@ -1,0 +1,156 @@
+.icon-menu {
+	@media (max-width: $tablet) {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			left: 0;
+			position: absolute;
+			width: 100%;
+			height: 2.5px;
+			background-color: $mainColor;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		span {
+			top: calc(50% - 1px);
+		}
+		.menu-open & {
+			span {
+				transform: scale(0);
+			}
+			&::before {
+				transform: rotate(-45deg);
+				top: calc(50% - 1px);
+			}
+			&::after {
+				transform: rotate(45deg);
+				bottom: calc(50% - 1px);
+			}
+		}
+	}
+}
+
+
+.header {
+	&__top {
+		background-color: $mainColorMint;
+	}
+}
+
+.top-header {
+	padding: 10px 0;
+	&__container {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		min-height: 80px;
+	}
+
+	&__menu {
+		flex: 1 1 auto;
+	}
+
+	&__logo {
+		width: 100%;
+		max-width: 70px;
+		min-width: 40px;
+		height: auto;
+		border: 1px solid black;
+	}
+
+	&__phone {
+		display: inline-flex;
+		text-align: center;
+		font-family: 'Roboto-regular';
+		font-style: 'normal';
+		font-weight: 500;
+		font-size: 20px;
+		line-height: math.div(29, 20);
+		&::before {
+			font-size: rem(20);
+			margin-right: em(15, 28);
+		}
+		@media (max-width: $mobile) {
+			display: none;
+		}
+	}
+
+	&__icon {
+		display: none;
+		@media (max-width: $mobile) {
+			display: flex;
+		}
+	}
+}
+
+.menu-top-header {
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		row-gap: 5px;
+		@include adaptiveValue('column-gap', 70, 20);
+		@media (max-width: $tablet) {
+			flex-direction: column;
+			row-gap: 10px;
+			margin-top: 10%;
+		}
+	}
+
+	&__item {
+		padding: 5px;
+		border: 2px solid rgba(0, 0, 0, 0);
+		@media (max-width: $tablet) {
+			display: none;
+			font-size: 25px;
+		}
+	}
+
+	&__active {
+
+		&:hover {
+			transform: scale(1.2);
+			border: 2px solid $mainColorYellow;
+			color: black;
+		}
+
+	}
+
+	&__link {
+		line-height: math.div(23, 16);
+	}
+}
+
+.menu {
+	&__body {
+		@media (max-width: $tablet) {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: -100%;
+			overflow: auto;
+			background-color: $mainColorMint;
+			z-index: 3;
+		}
+		.menu-open & {
+			left: 0;
+		}
+	}
+	@media (max-width: $tablet) {
+		flex: 0 0 30px;
+		display: block;
+	}
+}
