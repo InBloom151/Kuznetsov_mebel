@@ -252,8 +252,8 @@
     &__blocks {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      padding: 20px 0;
+      justify-content: space-around;
+      padding: 120px 0;
       @media (max-width: 843px) {
         padding: 0;
       }
@@ -263,15 +263,10 @@
 
     &__block {
       width: 630px;
-      height: 200px;
-      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 5px 100px;
-      background-color: $mainColorMint;
-      padding: 36px 63px 44px 62px;
+      height: 150px;
       @media (min-width: 1920px) {
         width: 630px;
         height: 200px;
-        padding: 36px 63px 44px 62px;
       }
       @media (max-width: 1191px) {
         width: calc(400px + (630 - 400) * ((100vw - 768px) / (1191 - 768)));
@@ -287,38 +282,39 @@
       }
     }
 
-    &__block-diff-color {
-      background-color: $mainColorYellow;
-    }
-
-    &__title {
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 500;
-      font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
-      line-height: 35px;
-      margin-bottom: 10px;
-      @media (min-width: 1920px) {
-        font-size: 30px;
-        line-height: 35px;
-        margin-bottom: 10px;
-      }
-      @media (max-width: $mobile) {
-        line-height: 20px;
-        margin-bottom: 5px;
-      }
-    }
-
     &__text {
       font-weight: 400;
-      font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320)));
-      line-height: 23px;
+      font-size: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320)));
+      line-height: 29px;
+      font-family: 'Raleway';
+      font-style: normal;
       @media (min-width: 1920px) {
-        font-size: 20px;
-        line-height: 23px;
+        font-size: 25px;
+        line-height: 29px;
       }
     }
   }
+
+  .about-icons {
+
+		&__wrapper {
+		}
+  }
+  .about-icon {
+
+      &__block {
+      }
+
+      &__icon {
+        width: 100px;
+        height: 100px;
+        color: $mainColorYellow;
+      }
+
+      &__text {
+      }
+  }
+
 
   //======GALERY=============================================================================
 
