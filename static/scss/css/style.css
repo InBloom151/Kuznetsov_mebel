@@ -446,11 +446,33 @@ body {
   }
 }
 
+.about-icon__wrapper {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.about-icon__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
 .about-icon__icon {
   width: 100px;
   height: 100px;
-  color: #FFE200;
+  fill: #FFE200 !important;
+  margin-bottom: 20px;
 }
+.about-icon__text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+}
+
 .galery__container {
   margin-top: 60px;
 }
